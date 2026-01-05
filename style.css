@@ -59,8 +59,8 @@ img{ max-width: 100%; display: block; }
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  z-index: 100;
+  right: 0;
+  z-index: 9999;
   backdrop-filter: blur(12px);
   background: rgba(11,15,25,.85);
   border-bottom: 1px solid var(--line);
@@ -82,7 +82,12 @@ img{ max-width: 100%; display: block; }
 }
 .brand__dot{
   width: 12px;
-  height: 12px;
+  padding-top: 64px; /* wysokość paska nawigacji */
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* żeby nagłówek sekcji nie chował się pod fixed topbar */
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent1), var(--accent3));
   box-shadow: 0 0 0 6px rgba(124,58,237,.15);
