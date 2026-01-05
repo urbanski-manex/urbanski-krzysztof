@@ -416,6 +416,56 @@ input:focus, textarea:focus{
   background: rgba(255,255,255,.04);
 }
 
+/* CERTS */
+.cert__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cert p{
+  color: var(--muted);
+}
+
+.badge{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.05);
+  color: var(--text);
+  font-size: .85rem;
+  white-space: nowrap;
+}
+
+.badge--progress{
+  background: rgba(96,165,250,.10);
+  border-color: rgba(96,165,250,.35);
+}
+
+.badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.cert__meta{
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+}
+.cert__meta strong{
+  color: var(--text);
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px){
   .hero__grid{ grid-template-columns: 1fr; }
