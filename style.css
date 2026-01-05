@@ -82,15 +82,15 @@ img{ max-width: 100%; display: block; }
 }
 .brand__dot{
   width: 12px;
-  padding-top: 64px; /* wysokość paska nawigacji */
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent1), var(--accent3));
+  box-shadow: 0 0 0 6px rgba(124,58,237,.15);
 }
 
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* żeby nagłówek sekcji nie chował się pod fixed topbar */
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent1), var(--accent3));
-  box-shadow: 0 0 0 6px rgba(124,58,237,.15);
 }
 .nav{
   display: flex;
