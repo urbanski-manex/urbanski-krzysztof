@@ -446,24 +446,25 @@
         </div>
 
         <div class="contact">
-          <form class="card form" onsubmit="return false" aria-label="Formularz kontaktowy (demo)">
-            <label>
-              Imię
-              <input type="text" placeholder="Twoje imię" />
+          <form class="form" action="https://formspree.io/f/mykzaowv" method="POST">
+            <label>Imię
+              <input name="name" placeholder="Twoje imię" required>
             </label>
-            <label>
-              E-mail
-              <input type="email" placeholder="twoj@mail.com" />
-            </label>
-            <label>
-              Wiadomość
-              <textarea rows="5" placeholder="O czym chcesz pogadać?"></textarea>
-            </label>
-            <button class="btn" type="submit" title="To jest demo — bez backendu">Wyślij (demo)</button>
 
-            <p class="muted">
-              Formularz jest demonstracyjny (bez wysyłki). Jeśli chcesz, podpowiem prosty backend (np. Formspree).
-            </p>
+            <label>E-mail
+              <input type="email" name="email" placeholder="twoj@mail.com" required>
+            </label>
+
+            <label>Wiadomość
+              <textarea name="message" rows="5" placeholder="O czym chcesz pogadać?" required></textarea>
+            </label>
+
+            <input type="hidden" name="_subject" value="Wiadomość ze strony (Krzysztof Urbański)" />
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button class="btn" type="submit">Wyślij</button>
+
+            <p class="muted" id="formNote">Formularz działa — wiadomość trafi na mój e-mail.</p>
           </form>
 
           <aside class="card contact__aside">
@@ -519,6 +520,37 @@
           btn.setAttribute("aria-expanded", "false");
           btn.setAttribute("aria-label", "Otwórz menu");
         });
+      });
+    }
+
+    // AJAX submit for Formspree
+    const form = document.querySelector(".form");
+    const note = document.getElementById("formNote");
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        if (note) note.textContent = "Wysyłam…";
+
+        const data = new FormData(form);
+
+        try {
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (res.ok) {
+            form.reset();
+            if (note) note.textContent = "Wysłane ✅ Dzięki! Odpowiem na e-mail.";
+          } else {
+            if (note) note.textContent = "Ups — nie wyszło. Spróbuj ponownie albo napisz bezpośrednio na e-mail.";
+          }
+        } catch (err) {
+          if (note) note.textContent = "Brak połączenia. Spróbuj ponownie albo napisz bezpośrednio na e-mail.";
+        }
       });
     }
   </script>
