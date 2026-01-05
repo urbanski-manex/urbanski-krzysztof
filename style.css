@@ -1,3 +1,10 @@
+/* Styl dla .avatar */
+.avatar {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 20%; /* spróbuj 10–30% */
+}
 :root{
   --bg: #0b0f19;
   --text: rgba(255,255,255,.90);
