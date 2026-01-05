@@ -29,7 +29,8 @@ body{
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.65;
+  font-size: 18px;     /* było domyślnie ~16px */
 
   /* fixed topbar */
   padding-top: 76px;
@@ -146,7 +147,8 @@ body{
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.65;
+  font-size: 18px;     /* było domyślnie ~16px */
 
   /* topbar fixed */
   padding-top: 64px;
@@ -214,6 +216,17 @@ body{
   }
   color: var(--text);
   background: rgba(255,255,255,.05);
+}
+
+p, li{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 600px){
+  p, li{
+    text-align: left;
+  }
 }
 
 /* BUTTONS */
