@@ -1,8 +1,8 @@
+
 :root{
   --bg: #0b0f19;
   --bg2: #0f1629;
   --card: rgba(255,255,255,.06);
-  --card2: rgba(255,255,255,.08);
   --text: rgba(255,255,255,.90);
   --muted: rgba(255,255,255,.68);
   --line: rgba(255,255,255,.12);
@@ -20,17 +20,68 @@
 
 *{ box-sizing: border-box; }
 html, body{ height: 100%; }
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* żeby nagłówki sekcji nie chowały się pod fixed topbar */
+}
+
 body{
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background:
-    radial-gradient(900px 550px at 18% 10%, rgba(124,58,237,.25), transparent 60%),
-    radial-gradient(700px 450px at 82% 12%, rgba(96,165,250,.18), transparent 60%),
-    radial-gradient(900px 650px at 60% 92%, rgba(34,197,94,.12), transparent 55%),
-    linear-gradient(180deg, var(--bg), #070a12 70%);
   color: var(--text);
   line-height: 1.55;
-  padding-top: 64px; /* Add padding to prevent content from being hidden under the fixed topbar */
+
+  /* fixed topbar */
+  padding-top: 76px;
+
+  /* jednolite, digitalowe tło */
+  background-color: #070a12;
+  background-image:
+    /* siatka większa */
+    linear-gradient(to right, rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,.045) 1px, transparent 1px),
+
+    /* siatka drobniejsza */
+    linear-gradient(to right, rgba(255,255,255,.022) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,.022) 1px, transparent 1px),
+
+    /* akcenty glow */
+    radial-gradient(900px 520px at 18% 8%, rgba(96,165,250,.10), transparent 60%),
+    radial-gradient(900px 520px at 82% 10%, rgba(124,58,237,.09), transparent 60%),
+
+    /* baza */
+    linear-gradient(180deg, #0b0f19 0%, #070a12 70%);
+
+  background-size:
+    72px 72px,
+    72px 72px,
+    18px 18px,
+    18px 18px,
+    auto,
+    auto,
+    auto;
+
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* delikatny “grain/scanline” */
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: .07;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,.05) 0px,
+      rgba(255,255,255,.05) 1px,
+      transparent 1px,
+      transparent 7px
+    );
 }
 
 a{ color: inherit; text-decoration: none; }
