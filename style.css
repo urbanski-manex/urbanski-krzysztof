@@ -1,3 +1,72 @@
+/* O MNIE: ożywienie sekcji "Jak myślę o problemach" */
+#about .grid2 .card:first-child{
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+}
+
+/* neonowy akcent w rogu */
+#about .grid2 .card:first-child::before{
+  content:"";
+  position:absolute;
+  inset:-60px -80px auto auto;
+  width:220px;
+  height:220px;
+  background: radial-gradient(circle at 30% 30%, rgba(96,165,250,.22), transparent 60%),
+              radial-gradient(circle at 70% 70%, rgba(124,58,237,.18), transparent 60%);
+  filter: blur(2px);
+  pointer-events:none;
+}
+
+/* pasek akcentu po lewej */
+#about .grid2 .card:first-child::after{
+  content:"";
+  position:absolute;
+  left:0; top:0; bottom:0;
+  width:3px;
+  background: linear-gradient(180deg, var(--accent3), var(--accent1));
+  opacity:.9;
+  pointer-events:none;
+}
+
+/* lista jako "kroki" */
+#about .grid2 .card:first-child .list{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+#about .grid2 .card:first-child .list li{
+  position: relative;
+  padding: 12px 12px 12px 46px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  border-radius: 16px;
+  text-align: left; /* żeby nie wyglądało dziwnie w takich "kafelkach" */
+}
+
+/* numerki kroków */
+#about .grid2 .card:first-child .list li::before{
+  counter-increment: step;
+  content: counter(step);
+  position:absolute;
+  left:14px; top:12px;
+  width:22px; height:22px;
+  border-radius: 999px;
+  display:grid;
+  place-items:center;
+  font-weight: 800;
+  font-size: .85rem;
+  color: rgba(255,255,255,.92);
+  background: linear-gradient(135deg, rgba(96,165,250,.85), rgba(124,58,237,.75));
+  box-shadow: 0 10px 25px rgba(96,165,250,.12);
+}
+
+#about .grid2 .card:first-child .list{
+  counter-reset: step;
+}
 /* Styl dla listy kroków i ikon */
 .steps li{ padding-left: 54px !important; }
 .sicon{
