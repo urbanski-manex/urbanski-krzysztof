@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>O mnie — Krzysztof</title>
-  <meta name="description" content="Strona o mnie: praca, pasje, projekty i kontakt." />
+  <title>Krzysztof Urbański — Process Engineer (FMCG)</title>
+  <meta name="description" content="Krzysztof Urbański — inżynier procesu w FMCG. Digital, OEE, waste reduction, no-touch quality. Pasje: triathlon, góry, wspinanie." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,14 +20,14 @@
     <div class="container topbar__inner">
       <a class="brand" href="#home" aria-label="Przejdź do góry strony">
         <span class="brand__dot"></span>
-        <span class="brand__text">Krzysztof</span>
+        <span class="brand__text">Krzysztof Urbański</span>
       </a>
 
       <nav class="nav" aria-label="Nawigacja">
         <a href="#about">O mnie</a>
-        <a href="#passions">Pasje</a>
+        <a href="#work">Praca</a>
         <a href="#projects">Projekty</a>
-        <a href="#timeline">Droga</a>
+        <a href="#passions">Pasje</a>
         <a class="btn btn--small" href="#contact">Kontakt</a>
       </nav>
     </div>
@@ -38,46 +40,51 @@
         <div class="hero__content">
           <p class="kicker">Cześć! Jestem</p>
           <h1 class="title">
-            Krzysztof — inżynier procesu,
-            <span class="grad">fan gór</span>
-            i człowiek, który lubi robić rzeczy „sprytniej".
+            Krzysztof Urbański —
+            <span class="grad">Process Engineer</span> w FMCG,
+            lider usprawnień i „detektyw cichych strat”.
           </h1>
 
           <p class="lead">
-            Łączę podejście techniczne z ciekawością świata: od usprawnień produkcji i digitalizacji,
-            po długie trasy w górach i naukę nowych umiejętności.
+            Łączę ciekawość badacza z dyscypliną inżyniera: znajduję przyczyny, które chowają się w
+            “to nic takiego”. Usprawniam procesy, digitalizuję rutyny i wdrażam zmiany tak,
+            żeby działały również wtedy, gdy mnie nie ma.
           </p>
 
           <div class="hero__cta">
-            <a class="btn" href="#contact">Napisz do mnie</a>
-            <a class="btn btn--ghost" href="#projects">Zobacz projekty</a>
+            <a class="btn" href="#projects">Zobacz projekty</a>
+            <a class="btn btn--ghost" href="#contact">Napisz do mnie</a>
           </div>
 
           <ul class="stats" aria-label="Szybkie fakty">
-            <li><strong>FMCG</strong><span>usprawnienia + jakość</span></li>
-            <li><strong>Digital</strong><span>automatyzacja i dane</span></li>
-            <li><strong>Góry</strong><span>weekendy 3–4 dni</span></li>
+            <li><strong>+6% OEE</strong><span>w 3 lata</span></li>
+            <li><strong>-1,5% waste</strong><span>redukcja strat</span></li>
+            <li><strong>-45% SMED</strong><span>czas przezbrojeń</span></li>
           </ul>
+
+          <p class="motto">
+            <span>“I don’t walk to arrive. I walk to become.”</span>
+          </p>
         </div>
 
-        <div class="hero__card" aria-label="Karta z awatarem">
-          <!-- Podmień src na swoje zdjęcie: np. images/me.jpg -->
-          <img class="avatar" src="https://images.unsplash.com/photo-1520975958225-723b7b7d37c0?auto=format&fit=crop&w=900&q=80"
-               alt="Zdjęcie portretowe (placeholder)" />
+        <div class="hero__card" aria-label="Karta ze zdjęciem i skrótem">
+          <!-- Zdjęcie: wrzuć do repo np. images/me.jpg i podmień src -->
+          <img class="avatar" src="images/me.jpg" alt="Krzysztof Urbański (podmień na swoje zdjęcie)" onerror="this.src='https://images.unsplash.com/photo-1520975958225-723b7b7d37c0?auto=format&fit=crop&w=1200&q=80';" />
 
           <div class="hero__cardText">
             <h2>Co mnie napędza?</h2>
             <p>
-              Szukam prostych rozwiązań na trudne problemy. Lubię, gdy dane i obserwacje przekładają się
-              na realny efekt: lepszą jakość, mniejsze straty, spokojniejszą pracę zespołu.
+              Poluję na “ciche straty” — rzeczy pomijane, bo nie krzyczą. Buduję mapę tarcia procesu
+              i zamieniam ją w proste, trwałe usprawnienia (często z digitalem w tle).
             </p>
 
             <div class="chips" aria-label="Zainteresowania">
-              <span class="chip">Problem solving</span>
               <span class="chip">DMAIC</span>
+              <span class="chip">RCA</span>
               <span class="chip">OEE</span>
-              <span class="chip">AI w praktyce</span>
-              <span class="chip">Korona Gór Polski</span>
+              <span class="chip">SPC</span>
+              <span class="chip">VSM</span>
+              <span class="chip">No-Touch Quality</span>
             </div>
           </div>
         </div>
@@ -92,75 +99,96 @@
         <div class="section__head">
           <h2>O mnie</h2>
           <p>
-            Z jednej strony inżynieria i liczby, z drugiej — ciekawość ludzi i procesów.
-            Najbardziej lubię sytuacje, gdy zespół „klika" i robi się postęp tydzień po tygodniu.
+            Jestem człowiekiem o ogromnej ciekawości świata i tego, jak rzeczy działają.
+            Najbardziej lubię sytuacje, gdy z pozornie nieistotnego problemu robi się temat,
+            który realnie poprawia wynik: stabilniejszy proces, mniej strat, lepsza jakość.
           </p>
         </div>
 
         <div class="grid2">
           <article class="card">
-            <h3>Jak pracuję</h3>
+            <h3>Jak myślę o problemach</h3>
             <ul class="list">
-              <li><strong>Diagnoza:</strong> obserwacja, dane, rozmowy, hipotezy.</li>
-              <li><strong>Prostota:</strong> najpierw łatwe usprawnienia, potem automatyzacja.</li>
-              <li><strong>Wdrożenie:</strong> standardy, wizualizacja, utrzymanie efektu.</li>
-              <li><strong>Współpraca:</strong> bez zespołu nie ma trwałej zmiany.</li>
+              <li><strong>Gemba + dane:</strong> obserwacja procesu, liczby i rozmowy z ludźmi.</li>
+              <li><strong>Ukryte root cause:</strong> od “objawu” do mechanizmu problemu.</li>
+              <li><strong>Szybkie testy:</strong> hipotezy → eksperyment → standard.</li>
+              <li><strong>Utrzymanie efektu:</strong> stabilizacja, monitoring, ownership.</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Poza pracą</h3>
+            <h3>Jak działam z ludźmi</h3>
             <p>
-              Łapię oddech w górach. Lubię planować trasy, robić „dobre logistyki" na weekend
-              i zbierać kolejne szczyty. Do tego rozwój: angielski, nowe narzędzia, automatyzacje.
+              Lubię współpracę: burze mózgów, warsztaty, mentoring. Wierzę, że najlepsze rozwiązania
+              powstają tam, gdzie łączy się doświadczenie zespołu z klarownym procesem pracy
+              (DMAIC / RCA / standardy).
             </p>
-            <div class="quote">
-              <p>
-                „Najlepsze rzeczy dzieją się wtedy, gdy porządek spotyka się z ciekawością."
-              </p>
-              <span>— moje motto robocze</span>
+
+            <div class="values">
+              <div class="value">
+                <strong>Stay three steps ahead</strong>
+                <span>uczę się i testuję nowe narzędzia</span>
+              </div>
+              <div class="value">
+                <strong>Care deeply</strong>
+                <span>dbam o ludzi i jakość współpracy</span>
+              </div>
+              <div class="value">
+                <strong>Keep it simple, roll it out fast, make it last.</strong>
+                <span>wdrażalnie i utrzymane w czasie</span>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PASSIONS -->
-    <section id="passions" class="section section--alt">
+    <!-- WORK -->
+    <section id="work" class="section section--alt">
       <div class="container">
         <div class="section__head">
-          <h2>Pasje, które robią robotę</h2>
+          <h2>W czym jestem mocny</h2>
           <p>
-            To one sprawiają, że jestem ciekawszy świata — i że na problemy patrzę z różnych stron.
+            Moje “pole gry” to FMCG: proces, dane, digital i praktyczne wdrożenia. Najczęściej działam tam,
+            gdzie problem jest niby mały — ale przez miesiące generuje duże straty.
           </p>
         </div>
 
         <div class="grid3">
           <article class="card card--icon">
-            <div class="icon" aria-hidden="true">⛰️</div>
-            <h3>Góry</h3>
-            <p>
-              Korona Gór Polski, długie podejścia, wschody słońca, trasy 3–4 dniowe.
-              Najbardziej lubię „logiczne" wyjazdy: mało chaosu, dużo widoków.
-            </p>
+            <div class="icon" aria-hidden="true">🧩</div>
+            <h3>Problem solving & RCA</h3>
+            <p>Docieranie do ukrytych przyczyn, zamiast łatania objawów.</p>
           </article>
 
           <article class="card card--icon">
-            <div class="icon" aria-hidden="true">🧠</div>
-            <h3>Uczenie się</h3>
-            <p>
-              Angielski (B1–B2), narzędzia AI w pracy, rozkminy procesowe. Lubię krótkie sesje,
-              ale regularnie — efekty kumulują się szybciej niż się wydaje.
-            </p>
+            <div class="icon" aria-hidden="true">📈</div>
+            <h3>Data-driven improvement</h3>
+            <p>OEE, waste, SPC — decyzje na danych, nie na przeczuciu.</p>
           </article>
 
           <article class="card card--icon">
-            <div class="icon" aria-hidden="true">⚙️</div>
-            <h3>Usprawnianie</h3>
-            <p>
-              Mam słabość do momentu „aha!": gdy widać, że mała zmiana daje duży efekt.
-              Standard, wizualizacja, stabilny proces — i robi się spokojniej.
-            </p>
+            <div class="icon" aria-hidden="true">🔁</div>
+            <h3>Change management</h3>
+            <p>Wdrażanie tak, żeby ludzie chcieli używać rozwiązania.</p>
+          </article>
+
+          <article class="card card--icon">
+            <div class="icon" aria-hidden="true">🧭</div>
+            <h3>System thinking</h3>
+            <p>Patrzę end-to-end, nie tylko na “wąskie gardło”.</p>
+          </article>
+
+          <article class="card card--icon">
+            <div class="icon" aria-hidden="true">🧰</div>
+            <h3>Stabilizacja standardu</h3>
+            <p>Centerlining, SMED, utrzymanie efektu i prosty monitoring.</p>
+          </article>
+
+          <article class="card card--icon">
+            <div class="icon" aria-hidden="true">🤖</div>
+            <h3>Digital mindset</h3>
+            <p>No-touch, automatyzacja, obserwowalność procesu i danych.</p>
           </article>
         </div>
       </div>
@@ -170,94 +198,116 @@
     <section id="projects" class="section">
       <div class="container">
         <div class="section__head">
-          <h2>Projekty i osiągnięcia</h2>
+          <h2>Projekty (to, co naprawdę lubię robić)</h2>
           <p>
-            Kilka przykładów tego, co lubię robić: digitalizacja, jakość, efektywność.
+            Przykłady tematów, w których czuję się najlepiej: jakość bez dotykania, digital, OEE i straty.
+            Zwykle zaczynam od zrozumienia mechanizmu problemu, a potem buduję rozwiązanie, które da się utrzymać.
+          </p>
         </div>
 
         <div class="grid2">
           <article class="card">
-            <h3>Digital Eye / No-Touch Quality</h3>
+            <h3>DEOC / Digital Eye of Consumers</h3>
             <p>
-              Wykorzystanie danych i wizji (lub automatyzacji kontroli), żeby szybciej wykrywać odchylenia,
-              ograniczać ręczne sprawdzanie i skracać czas reakcji.
+              Innowacyjny projekt digital “od użytkownika”: pilotaż nowej technologii, elementy uczenia maszynowego,
+              zabezpieczenie jakości i szybsze wykrywanie odchyleń. Nowość, którą trzeba dowieźć zmianą, nie slajdem.
             </p>
-            <ul class="tags" aria-label="Tagi projektu">
-              <li>data</li><li>quality</li><li>automation</li><li>standard</li>
+            <ul class="tags" aria-label="Tagi">
+              <li>digital</li><li>quality</li><li>innovation</li><li>change</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>OEE i straty materiałowe</h3>
+            <h3>No-Touch Quality</h3>
             <p>
-              Analiza strat, priorytetyzacja działań, wdrażanie standardów i pomiar efektu.
-              Cel: lepsza dostępność, mniej odpadów, stabilniejsza praca.
+              Tam, gdzie kontrola manualna jest wąskim gardłem — robię ją “bezdotykową”: automatyzacja, standard,
+              szybsza reakcja na odchylenia, mniej rozproszenia i mniej ryzyka.
             </p>
-            <ul class="tags" aria-label="Tagi projektu">
-              <li>OEE</li><li>waste</li><li>Lean</li><li>problem solving</li>
+            <ul class="tags" aria-label="Tagi">
+              <li>no-touch</li><li>standard</li><li>stability</li><li>data</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Szkolenia i prowadzenie zespołu</h3>
+            <h3>OEE improvement & “ciche straty”</h3>
             <p>
-              Cotygodniowe sesje problem solving, warsztaty DMAIC, praca na realnych case'ach,
-              wspólne dochodzenie do przyczyn źródłowych.
+              Mikroprzestoje i drobne odchylenia, które nikt nie wpisuje w raporty, a które w skali miesięcy zjadają wynik.
+              Gemba + dane + rozmowy z operatorami → hipotezy → szybkie testy → standard.
             </p>
-            <ul class="tags" aria-label="Tagi projektu">
-              <li>DMAIC</li><li>facylitacja</li><li>coaching</li><li>team</li>
+            <ul class="tags" aria-label="Tagi">
+              <li>OEE</li><li>losses</li><li>RCA</li><li>teamwork</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Usprawnienia „małe, a bolą"</h3>
+            <h3>Waste reduction & SMED</h3>
             <p>
-              Zmiany, które nie wyglądają spektakularnie — ale usuwają tarcie w procesie:
-              lepsze instrukcje, wizualizacja, 5S, drobne automaty.
+              Redukcja strat materiałowych i czasu przezbrojeń: stabilizacja procesu, standaryzacja działań, analiza przyczyn
+              i wdrożenia, które da się powtórzyć na kolejnych liniach.
             </p>
-            <ul class="tags" aria-label="Tagi projektu">
-              <li>5S</li><li>standards</li><li>visual</li><li>Kaizen</li>
+            <ul class="tags" aria-label="Tagi">
+              <li>waste</li><li>SMED</li><li>centerlining</li><li>scale</li>
             </ul>
           </article>
+        </div>
+
+        <div class="banner">
+          <div>
+            <h3>Efekty (przykłady)</h3>
+            <p class="muted">
+              +6% OEE w 3 lata • redukcja waste o 1,5% • SMED: redukcja czasu przezbrojeń o 45%
+            </p>
+          </div>
+          <a class="btn btn--ghost" href="#contact">Porozmawiajmy</a>
         </div>
       </div>
     </section>
 
-    <!-- TIMELINE -->
-    <section id="timeline" class="section section--alt">
+    <!-- PASSIONS -->
+    <section id="passions" class="section section--alt">
       <div class="container">
         <div class="section__head">
-          <h2>Moja droga</h2>
+          <h2>Pasje (to mój reset)</h2>
           <p>
-            Kilka kamieni milowych — możesz to potraktować jako „historię", a nie CV.
+            Praca jest na pierwszym planie, ale to sport uczy mnie konsekwencji i zarządzania energią.
           </p>
         </div>
 
-        <ol class="timeline">
-          <li class="timeline__item">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <div class="timeline__content">
-              <h3>Wejście w świat produkcji</h3>
-              <p>Procesy, standardy, pierwsze usprawnienia i nauka pracy „na gemba".</p>
-            </div>
-          </li>
+        <div class="grid3">
+          <article class="card card--icon">
+            <div class="icon" aria-hidden="true">🏊‍♂️</div>
+            <h3>Triathlon</h3>
+            <p>
+              Uczy zarządzania tempem: nie wygrywa ten, kto zaczyna najszybciej, tylko ten, kto dowozi plan.
+              Zrobione 1/8 i 1/4 — cel na ten rok: 1/2.
+            </p>
+          </article>
 
-          <li class="timeline__item">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <div class="timeline__content">
-              <h3>Digitalizacja i dane</h3>
-              <p>Coraz więcej decyzji opartych o dane — od jakości po efektywność.</p>
-            </div>
-          </li>
+          <article class="card card--icon">
+            <div class="icon" aria-hidden="true">⛰️</div>
+            <h3>Góry</h3>
+            <p>
+              Korona Gór Polski (28/28) nauczyła mnie logistyki, konsekwencji i planu B.
+              Najlepsze decyzje podejmuje się zanim zrobi się trudno.
+            </p>
+          </article>
 
-          <li class="timeline__item">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <div class="timeline__content">
-              <h3>Liderowanie projektom</h3>
-              <p>Prowadzenie tematów end-to-end i facylitacja problem solvingu w zespole.</p>
-            </div>
-          </li>
-        </ol>
+          <article class="card card--icon">
+            <div class="icon" aria-hidden="true">🧗</div>
+            <h3>Wspinanie</h3>
+            <p>
+              Technika > siła. Na razie indoor i bouldering, a cel: skały i ściana w terenie.
+              Małe kroki, dobra baza i cierpliwość.
+            </p>
+          </article>
+        </div>
+
+        <div class="miniQuote">
+          <p>
+            Idealny weekend? Zaplanowana wycieczka górska + dłuższy trening.
+            A w wersji “pasywnej”: czas z rodziną i przyjaciółmi przy planszówkach.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -267,7 +317,8 @@
         <div class="section__head">
           <h2>Kontakt</h2>
           <p>
-            Jeśli chcesz pogadać o projektach, górach albo o tym, jak usprawniać procesy bez chaosu — napisz.
+            Jeśli chcesz pogadać o digitalu w FMCG, no-touch quality, OEE albo o tym, jak wygrać z “cichymi stratami” —
+            napisz.
           </p>
         </div>
 
@@ -288,23 +339,26 @@
             <button class="btn" type="submit" title="To jest demo — bez backendu">Wyślij (demo)</button>
 
             <p class="muted">
-              Formularz jest demonstracyjny (bez wysyłki). Jeśli chcesz — podpowiem Ci prosty backend (np. Formspree).
+              Formularz jest demonstracyjny (bez wysyłki). Jeśli chcesz, podpowiem prosty backend (np. Formspree).
             </p>
           </form>
 
           <aside class="card contact__aside">
             <h3>Szybkie linki</h3>
             <ul class="links">
-              <li><a href="#" aria-label="Link do LinkedIn">LinkedIn (podmień link)</a></li>
-              <li><a href="#" aria-label="Link do GitHub">GitHub (podmień link)</a></li>
-              <li><a href="mailto:twojemail@przyklad.pl">twojemail@przyklad.pl</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/krzysztof-urba%C5%84ski/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                   target="_blank" rel="noopener">LinkedIn</a>
+              </li>
+              <li><a href="mailto:urbanskikrzysztof12@gmail.com">urbanskikrzysztof12@gmail.com</a></li>
+              <li><a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
             </ul>
 
             <div class="mini">
-              <h4>Mały bonus</h4>
+              <h4>Aktualnie uczę się</h4>
               <p>
-                Dodaj swoje zdjęcie i 2–3 konkrety (np. „+X% OEE", „-Y% waste", „Z wdrożeń digital"),
-                a strona od razu robi większe wrażenie.
+                Programowania — bo lubię budować rzeczy, które przyspieszają pracę i upraszczają rutynę.
+                Jeśli chcesz, pokażę Ci moje podejście do automatyzacji “małych rzeczy, które bolą”.
               </p>
             </div>
           </aside>
@@ -315,13 +369,12 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Krzysztof • zrobione prosto, ale z charakterem</p>
+      <p>© <span id="year"></span> Krzysztof Urbański • FMCG • Digital • Improvement</p>
       <a class="backtop" href="#home">↑ Do góry</a>
     </div>
   </footer>
 
   <script>
-    // mały detal: aktualny rok w stopce
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
