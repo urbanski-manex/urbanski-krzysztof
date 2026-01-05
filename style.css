@@ -1,3 +1,17 @@
+/* Styl dla listy kroków i ikon */
+.steps li{ padding-left: 54px !important; }
+.sicon{
+  position:absolute;
+  left:14px;
+  top:12px;
+  width:26px;
+  height:26px;
+  display:grid;
+  place-items:center;
+  border-radius: 10px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+}
 /* Styl dla .avatar */
 .avatar {
   height: 380px;              /* było 300px */
