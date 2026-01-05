@@ -1,6 +1,6 @@
 /* Styl dla .avatar */
 .avatar {
-  height: clamp(320px, 32vw, 460px);
+  height: 380px;              /* było 300px */
   object-fit: cover;
   object-position: 50% 20%;
 }
