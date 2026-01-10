@@ -491,6 +491,10 @@
   </footer>
 
   <script>
+      // Wymuś start od góry na mobile, jeśli nie ma hash w adresie
+      if (window.innerWidth < 900 && !window.location.hash) {
+        window.scrollTo(0, 0);
+      }
     // footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
